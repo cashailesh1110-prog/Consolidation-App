@@ -1,0 +1,19 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Group Consolidation workspace models
+    match /consolidation_workspaces/{workspaceId} {
+      allow read, write: if true;
+    }
+    
+    // Audit Trail events
+    match /consolidation_workspaces/{workspaceId}/audit_trail/{eventId} {
+      allow read, write: if true;
+    }
+
+    // Default fallback
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}

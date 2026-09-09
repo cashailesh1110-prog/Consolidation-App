@@ -1,0 +1,8 @@
+{
+  "name": "Ind AS Group Consolidation & Component Audit Workbench",
+  "description": "Professional Ind AS (Schedule III / Ind AS 110) group financial statement consolidation, automated NCI & goodwill calculation, intercompany elimination journals, indicative cash flow statements, AI-powered mapping & note drafting, and SA 600 group audit materiality workbench.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

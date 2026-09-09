@@ -1,0 +1,17 @@
+{
+  "entities": {
+    "description": "Consolidated corporate group models, trial balances, eliminations, and statutory notes",
+    "fields": {
+      "workspaceId": { "type": "string", "description": "Unique workspace ID or 'default_group'" },
+      "framework": { "type": "string", "description": "IND_AS or AS" },
+      "entities": { "type": "array", "description": "List of group entities" },
+      "trialBalance": { "type": "array", "description": "Trial balance line items across entities" },
+      "eliminations": { "type": "array", "description": "Intercompany elimination entries" },
+      "mappingMemory": { "type": "array", "description": "AI / learned chart of accounts mapping memory" },
+      "materialityConfig": { "type": "object", "description": "SA 600 materiality benchmarks" },
+      "auditReportConfig": { "type": "object", "description": "Auditor details and sign-off report config" },
+      "notes": { "type": "object", "description": "Statutory notes to consolidated accounts" },
+      "updatedAt": { "type": "string", "description": "ISO timestamp of last cloud sync" }
+    }
+  }
+}
